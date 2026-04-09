@@ -139,10 +139,13 @@ while($b = mysqli_fetch_assoc($brands)){
 
 <div class="col-md-4">
 <div class="product-card">
+<a href="product.php?id=<?= $row['id'] ?>" style="text-decoration:none; color:black;">
 
 <img src="<?= $row['image'] ?>" class="product-img">
 
 <h6 class="mt-2"><?= $row['name'] ?></h6>
+
+</a>
 <p class="text-muted"><?= $row['brand'] ?></p>
 
 <p class="price">₹<?= $row['price'] ?></p>
